@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Ristorante Con Fusion: About Us</title>
+    <title>Cousera: inscription en ligne</title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,198 +13,701 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Mukta:wght@300&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
-            <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/brand/coursera-wordmark-blue.svg" height="30" width="100"></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <div class="dropdown mr-2">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
             </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="What do you want to learn ?" aria-label="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-large"></i></a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">A propos</a></li>
+                <li class="nav-item active"><a class="nav-link" href="./aboutus.html">Formation</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Etudes</a></li>
+                <li class="nav-item active"><a class="nav-link" href="./contactus.html">Actualités</a></li>
+            </ul>
         </div>
-    </header>
+</nav>
 
+<div class="carousel slide" id="bannerCarousel" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <img src="img/slide1.jpg" class="d-block img-fluid" alt="">
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block img-fluid" 
+            src="img/slide2.jpg" alt="">
+        </div>
+    </div>
+    </div>
+</div>
+<div class="row row-content infoContact">
+    <div class="col-12 col-sm-4 offset-1">
+        <h3 >Contactez nous</h3>
+            <i class="fa fa-phone fa-md "></i> : <a href="tel:+21652682256">+216 52 682 256</a><br>
+		    <i class="fa fa-envelope fa-md"></i> : <a href="mailto:confusion@food.net">confusion@food.net</a><br>
+            <i class="fa fa-globe fa-md"></i> : <a href="https://www.formation.com">www.formation.com</a><br>
+            <i class="fa fa-map-marker fa-md"></i> : 920, Rue de liberty Nabeul<br>
+        <h3 class="form-title">Social Media</h3>
+            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
+    </div>
+    <div class="col-12 col-sm-6">
+        <h3>Inscription en ligne</h3>
+        <form method="post" data-hs-cf-bound="true">
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <select name="civilite" class="form-control">
+                        <option value="">--Civilité--</option>
+                        <option value="Mme">Mme</option>
+                        <option value="M">M</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" id="nom" placeholder="Nom" name="nom" required="">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" id="prenom" placeholder="Prénom" name="prenom" required="">
+                </div>
+                <!--<div class="col-md-12">
+                    <input type="date" class="form-control" id="date_naiss" name="date_naiss" placeholder="Date de naissance" required>
+                </div>-->
+                <div class="col-md-12 mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" required="">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="text" class="form-control" id="tel" placeholder="Mobile" name="tel" pattern="[2495][0-9]{7}" required="">  
+                </div>
+                <div class="col-md-8">
+                    <select class="form-control" name="pays" id="pays">
+                                                                    <option value="241">
+                                                                            </option>
+                                                                    <option value="240">
+                                                                            </option>
+                                                                    <option value="239">
+                                                                            </option>
+                                                                    <option value="238">
+                                                                            </option>
+                                                                    <option value="237">
+                                                                            </option>
+                                                                    <option value="236">
+                                                                            </option>
+                                                                    <option value="235">
+                                                                            </option>
+                                                                    <option value="234">
+                                                                            </option>
+                                                                    <option value="233">
+                                                                            </option>
+                                                                    <option value="232">
+                                                                            </option>
+                                                                    <option value="231">
+                                                                            </option>
+                                                                    <option value="230">
+                                                                            </option>
+                                                                    <option value="229">
+                                                                            </option>
+                                                                    <option value="228">
+                                                                            </option>
+                                                                    <option value="227">
+                                                                            </option>
+                                                                    <option value="226">
+                                                                            </option>
+                                                                    <option value="225">
+                                                                            </option>
+                                                                    <option value="224">
+                                                                            </option>
+                                                                    <option value="223">
+                                                                            </option>
+                                                                    <option value="222">
+                                                                            </option>
+                                                                    <option value="221">
+                                                                            </option>
+                                                                    <option value="220">
+                                                                            </option>
+                                                                    <option value="219">
+                                                                            </option>
+                                                                    <option value="218">
+                                                                            </option>
+                                                                    <option value="217">
+                                                                            </option>
+                                                                    <option value="216">
+                                                                            </option>
+                                                                    <option value="215">
+                                                                            </option>
+                                                                    <option value="214">
+                                                                            </option>
+                                                                    <option value="213">
+                                                                            </option>
+                                                                    <option value="212">
+                                                                            </option>
+                                                                    <option value="211">
+                                                                            </option>
+                                                                    <option value="210">
+                                                                            </option>
+                                                                    <option value="209">
+                                                                            </option>
+                                                                    <option value="208">
+                                                                            </option>
+                                                                    <option value="207">
+                                                                            </option>
+                                                                    <option value="206">
+                                                                            </option>
+                                                                    <option value="205">
+                                                                            </option>
+                                                                    <option value="204">
+                                                                            </option>
+                                                                    <option value="203">
+                                                                            </option>
+                                                                    <option value="202">
+                                                                            </option>
+                                                                    <option value="201">
+                                                                            </option>
+                                                                    <option value="200">
+                                                                            </option>
+                                                                    <option value="199">
+                                                                            </option>
+                                                                    <option value="198">
+                                                                            </option>
+                                                                    <option value="197">
+                                                                            </option>
+                                                                    <option value="196">
+                                                                            </option>
+                                                                    <option value="195">
+                                                                            </option>
+                                                                    <option value="194">
+                                                                            </option>
+                                                                    <option value="193">
+                                                                            </option>
+                                                                    <option value="192">
+                                                                            </option>
+                                                                    <option value="191">
+                                                                            </option>
+                                                                    <option value="190">
+                                                                            </option>
+                                                                    <option value="189">
+                                                                            </option>
+                                                                    <option value="188">
+                                                                            </option>
+                                                                    <option value="187">
+                                                                            </option>
+                                                                    <option value="186">
+                                                                            </option>
+                                                                    <option value="185">
+                                                                            </option>
+                                                                    <option value="184">
+                                                                            </option>
+                                                                    <option value="183">
+                                                                            </option>
+                                                                    <option value="182">
+                                                                            </option>
+                                                                    <option value="181">
+                                                                            </option>
+                                                                    <option value="180">
+                                                                            </option>
+                                                                    <option value="179">
+                                                                            </option>
+                                                                    <option value="178">
+                                                                            </option>
+                                                                    <option value="177">
+                                                                            </option>
+                                                                    <option value="176">
+                                                                            </option>
+                                                                    <option value="175">
+                                                                            </option>
+                                                                    <option value="174">
+                                                                            </option>
+                                                                    <option value="173">
+                                                                            </option>
+                                                                    <option value="172">
+                                                                            </option>
+                                                                    <option value="171">
+                                                                            </option>
+                                                                    <option value="170">
+                                                                            </option>
+                                                                    <option value="169">
+                                                                            </option>
+                                                                    <option value="168">
+                                                                            </option>
+                                                                    <option value="167">
+                                                                            </option>
+                                                                    <option value="166">
+                                                                            </option>
+                                                                    <option value="165">
+                                                                            </option>
+                                                                    <option value="164">
+                                                                            </option>
+                                                                    <option value="163">
+                                                                            </option>
+                                                                    <option value="162">
+                                                                            </option>
+                                                                    <option value="161">
+                                                                            </option>
+                                                                    <option value="160">
+                                                                            </option>
+                                                                    <option value="159">
+                                                                            </option>
+                                                                    <option value="158">
+                                                                            </option>
+                                                                    <option value="157">
+                                                                            </option>
+                                                                    <option value="156">
+                                                                            </option>
+                                                                    <option value="155">
+                                                                            </option>
+                                                                    <option value="154">
+                                                                            </option>
+                                                                    <option value="153">
+                                                                            </option>
+                                                                    <option value="152">
+                                                                            </option>
+                                                                    <option value="151">
+                                                                            </option>
+                                                                    <option value="150">
+                                                                            </option>
+                                                                    <option value="149">
+                                                                            </option>
+                                                                    <option value="148">
+                                                                            </option>
+                                                                    <option value="147">
+                                                                            </option>
+                                                                    <option value="146">
+                                                                            </option>
+                                                                    <option value="145">
+                                                                            </option>
+                                                                    <option value="144">
+                                                                            </option>
+                                                                    <option value="143">
+                                                                            </option>
+                                                                    <option value="142">
+                                                                            </option>
+                                                                    <option value="141">
+                                                                            </option>
+                                                                    <option value="140">
+                                                                            </option>
+                                                                    <option value="139">
+                                                                            </option>
+                                                                    <option value="138">
+                                                                            </option>
+                                                                    <option value="137">
+                                                                            </option>
+                                                                    <option value="136">
+                                                                            </option>
+                                                                    <option value="135">
+                                                                            </option>
+                                                                    <option value="134">
+                                                                            </option>
+                                                                    <option value="133">
+                                                                            </option>
+                                                                    <option value="132">
+                                                                            </option>
+                                                                    <option value="131">
+                                                                            </option>
+                                                                    <option value="130">
+                                                                            </option>
+                                                                    <option value="129">
+                                                                            </option>
+                                                                    <option value="128">
+                                                                            </option>
+                                                                    <option value="127">
+                                                                            </option>
+                                                                    <option value="126">
+                                                                            </option>
+                                                                    <option value="125">
+                                                                            </option>
+                                                                    <option value="124">
+                                                                            </option>
+                                                                    <option value="123">
+                                                                            </option>
+                                                                    <option value="122">
+                                                                            </option>
+                                                                    <option value="121">
+                                                                            </option>
+                                                                    <option value="120">
+                                                                            </option>
+                                                                    <option value="119">
+                                                                            </option>
+                                                                    <option value="118">
+                                                                            </option>
+                                                                    <option value="117">
+                                                                            </option>
+                                                                    <option value="116">
+                                                                            </option>
+                                                                    <option value="115">
+                                                                            </option>
+                                                                    <option value="114">
+                                                                            </option>
+                                                                    <option value="113">
+                                                                            </option>
+                                                                    <option value="112">
+                                                                            </option>
+                                                                    <option value="111">
+                                                                            </option>
+                                                                    <option value="110">
+                                                                            </option>
+                                                                    <option value="109">
+                                                                            </option>
+                                                                    <option value="107">
+                                                                            </option>
+                                                                    <option value="106">
+                                                                            </option>
+                                                                    <option value="105">
+                                                                            </option>
+                                                                    <option value="104">
+                                                                            </option>
+                                                                    <option value="103">
+                                                                            </option>
+                                                                    <option value="102">
+                                                                            </option>
+                                                                    <option value="101">
+                                                                            </option>
+                                                                    <option value="100">
+                                                                            </option>
+                                                                    <option value="99">
+                                                                            </option>
+                                                                    <option value="98">
+                                                                            </option>
+                                                                    <option value="97">
+                                                                            </option>
+                                                                    <option value="96">
+                                                                            </option>
+                                                                    <option value="95">
+                                                                            </option>
+                                                                    <option value="94">
+                                                                            </option>
+                                                                    <option value="93">
+                                                                            </option>
+                                                                    <option value="92">
+                                                                            </option>
+                                                                    <option value="91">
+                                                                            </option>
+                                                                    <option value="90">
+                                                                            </option>
+                                                                    <option value="89">
+                                                                            </option>
+                                                                    <option value="88">
+                                                                            </option>
+                                                                    <option value="87">
+                                                                            </option>
+                                                                    <option value="86">
+                                                                            </option>
+                                                                    <option value="85">
+                                                                            </option>
+                                                                    <option value="84">
+                                                                            </option>
+                                                                    <option value="83">
+                                                                            </option>
+                                                                    <option value="82">
+                                                                            </option>
+                                                                    <option value="81">
+                                                                            </option>
+                                                                    <option value="80">
+                                                                            </option>
+                                                                    <option value="79">
+                                                                            </option>
+                                                                    <option value="78">
+                                                                            </option>
+                                                                    <option value="77">
+                                                                            </option>
+                                                                    <option value="76">
+                                                                            </option>
+                                                                    <option value="75">
+                                                                            </option>
+                                                                    <option value="74">
+                                                                            </option>
+                                                                    <option value="73">
+                                                                            </option>
+                                                                    <option value="72">
+                                                                            </option>
+                                                                    <option value="71">
+                                                                            </option>
+                                                                    <option value="70">
+                                                                            </option>
+                                                                    <option value="69">
+                                                                            </option>
+                                                                    <option value="68">
+                                                                            </option>
+                                                                    <option value="67">
+                                                                            </option>
+                                                                    <option value="66">
+                                                                            </option>
+                                                                    <option value="65">
+                                                                            </option>
+                                                                    <option value="64">
+                                                                            </option>
+                                                                    <option value="63">
+                                                                            </option>
+                                                                    <option value="62">
+                                                                            </option>
+                                                                    <option value="61">
+                                                                            </option>
+                                                                    <option value="60">
+                                                                            </option>
+                                                                    <option value="59">
+                                                                            </option>
+                                                                    <option value="58">
+                                                                            </option>
+                                                                    <option value="57">
+                                                                            </option>
+                                                                    <option value="56">
+                                                                            </option>
+                                                                    <option value="55">
+                                                                            </option>
+                                                                    <option value="54">
+                                                                            </option>
+                                                                    <option value="53">
+                                                                            </option>
+                                                                    <option value="52">
+                                                                            </option>
+                                                                    <option value="51">
+                                                                            </option>
+                                                                    <option value="50">
+                                                                            </option>
+                                                                    <option value="49">
+                                                                            </option>
+                                                                    <option value="48">
+                                                                            </option>
+                                                                    <option value="47">
+                                                                            </option>
+                                                                    <option value="46">
+                                                                            </option>
+                                                                    <option value="45">
+                                                                            </option>
+                                                                    <option value="44">
+                                                                            </option>
+                                                                    <option value="43">
+                                                                            </option>
+                                                                    <option value="42">
+                                                                            </option>
+                                                                    <option value="41">
+                                                                            </option>
+                                                                    <option value="40">
+                                                                            </option>
+                                                                    <option value="39">
+                                                                            </option>
+                                                                    <option value="38">
+                                                                            </option>
+                                                                    <option value="37">
+                                                                            </option>
+                                                                    <option value="36">
+                                                                            </option>
+                                                                    <option value="35">
+                                                                            </option>
+                                                                    <option value="34">
+                                                                            </option>
+                                                                    <option value="33">
+                                                                            </option>
+                                                                    <option value="32">
+                                                                            </option>
+                                                                    <option value="31">
+                                                                            </option>
+                                                                    <option value="30">
+                                                                            </option>
+                                                                    <option value="29">
+                                                                            </option>
+                                                                    <option value="28">
+                                                                            </option>
+                                                                    <option value="27">
+                                                                            </option>
+                                                                    <option value="26">
+                                                                            </option>
+                                                                    <option value="25">
+                                                                            </option>
+                                                                    <option value="24">
+                                                                            </option>
+                                                                    <option value="23">
+                                                                            </option>
+                                                                    <option value="22">
+                                                                            </option>
+                                                                    <option value="21">
+                                                                            </option>
+                                                                    <option value="20">
+                                                                            </option>
+                                                                    <option value="19">
+                                                                            </option>
+                                                                    <option value="18">
+                                                                            </option>
+                                                                    <option value="17">
+                                                                            </option>
+                                                                    <option value="16">
+                                                                            </option>
+                                                                    <option value="15">
+                                                                            </option>
+                                                                    <option value="14">
+                                                                            </option>
+                                                                    <option value="13">
+                                                                            </option>
+                                                                    <option value="12">
+                                                                            </option>
+                                                                    <option value="11">
+                                                                            </option>
+                                                                    <option value="10">
+                                                                            </option>
+                                                                    <option value="9">
+                                                                            </option>
+                                                                    <option value="8">
+                                                                            </option>
+                                                                    <option value="7">
+                                                                            </option>
+                                                                    <option value="6">
+                                                                            </option>
+                                                                    <option value="5">
+                                                                            </option>
+                                                                    <option value="4">
+                                                                            </option>
+                                                                    <option value="3">
+                                                                            </option>
+                                                                    <option value="2">
+                                                                            </option>
+                                                                    <option value="1">
+                                                                            </option>
+                                                                </select>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <select name="niveau" required="" id="niveau" class="form-control">
+                        <option value="" selected="selected">Votre niveau d'etude</option>
+                        <option value="7">Sans Bac</option>
+                        <option value="1">Bac (diplôme obtenu)</option>
+                        <option value="2">Bac+1</option>
+                        <option value="3">Bac+2</option>
+                        <option value="4">Bac+3</option>
+                        <option value="5">Bac+4</option>
+                        <option value="6">Bac+5 et plus</option>
+                    </select>
+                </div>
+                <br>
+
+
+           
+                <div class="col-md-12 mb-3">
+                    <select name="formation" id="formation" class="form-control" required="">
+                        <option value="">Choisissez une formation</option>
+                                                                    <option value="1">
+                            Formation Covadis                                                </option>
+                                                                    <option value="3">
+                            Formation Assistante de Direction                                                </option>
+                                                                    <option value="6">
+                            Formation Robot                                                </option>
+                                                                    <option value="7">
+                            Formation Autocad                                                </option>
+                                                                    <option value="9">
+                            Formation QHSE (Qualité, Hygiène, Sécurité et Environnement )                                                </option>
+                                                                    <option value="11">
+                            Formation Comptabilité et Fiscalité                                                </option>
+                                                                    <option value="16">
+                            Formation QHSE accélérée                                                </option>
+                                                                    <option value="17">
+                            formation cre?ation de projet parapharmacie                                                </option>
+                                                                    <option value="18">
+                            Formation massage                                                </option>
+                                                                    <option value="19">
+                            Formation Topographie                                                </option>
+                                                                    <option value="21">
+                            Formation Fromage                                                </option>
+                                                                    <option value="22">
+                            Formation Coaching de Vie                                                </option>
+                                                                    <option value="23">
+                            Formation Agent Bancaire et Assurance                                                </option>
+                                                                    <option value="25">
+                            Formation ISO 17025                                                </option>
+                                                                    <option value="26">
+                            Formation Fabrication du chocolat                                                </option>
+                                                                    <option value="31">
+                            Pack Formation Comptabilité                                                </option>
+                                                                    <option value="33">
+                            Pack Formation Multimédia et Marketing                                                </option>
+                                                                    <option value="35">
+                            Formation Revit Structure                                                </option>
+                                                                    <option value="36">
+                            Formation en Excel avancé                                                </option>
+                                                                    <option value="38">
+                            ISO 22000                                                </option>
+                                                                    <option value="39">
+                            Formation RSE                                                </option>
+                                                                    <option value="4">Autre formation 1</option>
+                        <option value="5">Autre formation 2</option>
+                    </select>
+                </div>
+            
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary text-white">S'inscrire</button>
+                </div>
+            </div>
+        </form>
+    </div>
+  </div>
+  <footer class="footer">
     <div class="container">
-        <div class="row">
-            <ol class="col-12 breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active">Contact Us</li>
-            </ol>
-            <div class="col-12">
-               <h3>Contact Us</h3>
-               <hr>
+        <div class="row">             
+            <div class="col-12 col-sm-3">
+                <div class="footer-logo text-center" style="float:left;width:43%;padding-right: 30px;">                                       
+                    <img src="img/brand/coursera-wordmark-blue.svg" width="100">
+                 </div>
+                <p style="float:none; padding:4px; ">COURSERA vous propose une offre complète de formations adaptées à tout public : particuliers
+                    , étudiants, employés, demandeurs d'emploi et chefs d'entreprises. Un centre de 
+                    formation professionnelle implanté en plein centre ville, ayant une infrastructure 
+                    adaptée aux exigences des normes de la formation demandée.
+                </p>
             </div>
-        </div>
-
-        <div class="row row-content">
-           <div class="col-12">
-              <h3>Location Information</h3>
-           </div>
-            <div class="col-12 col-sm-4 offset-sm-1">
-                   <h5>Our Address</h5>
-                    <address style="font-size: 100%">
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              <i class="fa fa-phone"></i>: +852 1234 5678<br>
-		              <i class="fa fa-fax"></i>: +852 8765 4321<br>
-		              <i class="fa fa-envelope"></i>:
-                        <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
+            <div class="col-12 col-sm-3">
+                <h3 class="footer-title" >Contactez nous</h3>
+                    <i class="fa fa-phone fa-md "></i> : <a href="tel:+21652682256">+216 52 682 256</a><br>
+                    <i class="fa fa-envelope fa-md"></i> : <a href="mailto:confusion@food.net">confusion@food.net</a><br>
+                    <i class="fa fa-globe fa-md"></i> : <a href="https://www.formation.com">www.formation.com</a><br>
+                    <i class="fa fa-map-marker fa-md"></i> : 920, Rue de liberty Nabeul<br>
+                    <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                    <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
             </div>
-            <div class="col-12 col-sm-6 offset-sm-1">
-                <h5>Map of our Location</h5>
+            <div class="col-12 col-sm-3">
+                <h3 class="footer-title">Navigation</h3>
+                <a href="https://www.formation.com">Qui sommes nous?</a><br>
+                <a href="https://www.formation.com">Formation</a><br>
+                <a href="https://www.formation.com">Actualités</a><br>
+                <a href="https://www.formation.com">Certeficat</a><br>
+                <a href="https://www.formation.com">Etude</a><br>
+                <a href="https://www.formation.com">Contact</a><br>
             </div>
-            <div class="col-12 col-sm-11 offset-sm-1">
-                <div class="btn-group" role="group">
-                    <a role="button" class="btn btn-primary" href="tel:+21652682256"><i class="fa fa-phone"></i> Call</a>
-                    <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
-                    <a role="button" class="btn btn-success" href="mailto:mohamedbidouk1998@gmail.com"><i class="fa fa-envelope-o"></i> Email</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row row-content">
-           <div class="col-12">
-              <h3>Send us your Feedback</h3>
-           </div>
-            <div class="col-12 col-md-9">
-                <form action="">
-                    <div class="form-group row">
-                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group row">
-                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
-                        <div class="col-5 col-md-3">
-                            <input type="tel" class="form-control" name="areacode" id="areacode" placeholder="areacode">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <input type="tel" class="form-control" name="telnum" id="telnum" placeholder="Tel. Number">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="eamilid" class="col-md-2 col-form-label">Email</label>
-                        <div class="col-md-10">
-                            <input type="email" class="form-control" name="emailid" id="emailid" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-6 offset-md-2">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" name="approve" 
-                                id="approve" value="">
-                                <label class="form-check-label" for="approve">
-                                    <strong>May we contatct you?</strong>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-md-3 offset-md-1">
-                            <select class="form-control" name="" id="">
-                                <option value="">Tel.</option>
-                                <option value="">Email</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="feedback" class="col-md-2 col-form-label">Your FeedBack</label>
-                        <div class="col-md-10">
-                            <textarea class="form-control" name="feedback" id="feedback" 
-                            rows="12"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">
-                                Send FeedBack
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-             <div class="col-12 col-md">
+            <div class="col-12 col-sm-3">
+                <h3 class="footer-title" >Notre adresse</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3209.858413656255!2d10.674844814628985!3d36.436806195771545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13029f1ca3014f93%3A0x197afabacb39f85c!2sHigher%20Institute%20of%20Technological%20Studies%20of%20Nabeul!5e0!3m2!1sen!2stn!4v1647275113406!5m2!1sen!2stn" width="270" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
        </div>
-
+       <div class="row">             
+            <div class="col-auto">
+                <p>© Copyright 2022 Institut Superieure de Technologie Nabeul</p>
+            </div>
+       </div>
     </div>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">             
-                <div class="col-4 offset-1 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-                      <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                      <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                      <i class="fa fa-envelope fa-lg"></i>: 
-                      <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
-                </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
-                    </div>
-                </div>
-           </div>
-           <div class="row justify-content-center">             
-                <div class="col-auto">
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
-                </div>
-           </div>
-        </div>
-    </footer>
+</footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
