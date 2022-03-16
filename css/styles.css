@@ -26,12 +26,16 @@
     text-decoration: none;
 }
 .infoContact a{
-    color: black;
+    color: #4c4c4c;
 }
 .infoContact a:hover{
     color: #1c00d1;
     text-decoration: none;
     font-weight: bold;
+}
+.infoContact{
+    color: #4c4c4c;
+
 }
 
 .footer-title{
@@ -122,21 +126,38 @@ hr {
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .fa-google {
-    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-  }
-  .fa-facebook-square {
-    color: #3b5998;
-    background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
-    background-size: 55%;
-    background-position: 70% 0;
-    background-repeat: no-repeat;
-  }
+}
+.fa-youtube{
+      color: red;
+}
+.fa-facebook{
+    color: #3b5998
+}
+.footer .fa-facebook{
+    color: white;
+}
+.fa-twitter{
+    color: #00aced
+}
+.fa-linkedin{
+    color: #007bb6
+}
+.fa-instagram{
+    color: #d6249f;
+}
+.fa-tiktok {
+    color: #111111;  
+  filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+    z-index: -1;
+}
+  
+.fa-tiktok:hover {
+    filter: drop-shadow(5px 5px 0 #F70250) drop-shadow(-5px -5px 0 #24f6f0) contrast(150%) brightness(110%);
+    z-index: -1;
+}
+.titre{
+    font-family: 'Courgette', cursive;
+}
   .form-control-lg{
       border-width: thin;
       border-style: double;
@@ -155,3 +176,6 @@ hr {
       margin-bottom: 20px;
       margin-top: 3px;
   }
+  img.filtered {
+    filter:  brightness(0) invert(1);
+    }
