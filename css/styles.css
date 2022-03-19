@@ -317,7 +317,7 @@ hr.new {
     100% {left:85%; top:182%;}
   }
 .change-logo-color{
-    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+    filter: sepia(0.5) contrast(0.9) ;
 }
 #nbr{
     font-size:62px;
