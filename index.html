@@ -14,8 +14,9 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Mukta:wght@300&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Ristorante Con Fusion</title>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@1,500&family=Mukta:wght@300&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+        <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/brand/coursera-wordmark-blue.svg" height="30" width="100"></a>
+            <a class="navbar-brand" href="#"><img class="change-logo-color" src="img/brand/coursera-wordmark-blue.svg" height="30" width="100"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <div class="dropdown mr-2">
                     <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,138 +50,6 @@
             </div>
     </nav>
 
-    <div id="reserveModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Reserve a Table</h4>
-                    <button class="close" type="button" data-dismiss="modal">
-                        &times;
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group row">
-                            <label for="numberofguests" class="col-lg-2 col-form-label">Number of Guests</label>
-                            <div class="col-lg-8 col-form-label ">
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" name="numberofguests" id="numberofguests1">
-                                    <label for="numberofguests1" class="col-form-label">&nbsp;1 </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" name="numberofguests" id="numberofguests2">
-                                    <label for="numberofguests2" class="col-form-label">&nbsp;2 </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" name="numberofguests" id="numberofguests3" checked>
-                                    <label for="numberofguests3" class="col-form-label">&nbsp; 3 </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" name="numberofguests" id="numberofguests4">
-                                    <label for="numberofguests4" class="col-form-label">&nbsp;4 </label>
-                                </div class="form-check form-check-inline">
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" name="numberofguests" id="numberofguests5">
-                                    <label for="numberofguests5" class="col-form-label">&nbsp;5 </label>
-                                </div class="form-check form-check-inline">
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" name="numberofguests" id="numberofguests6">
-                                    <label for="numberofguests6" class="col-form-label">&nbsp;6 </label>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group-row">
-                            <label class="col-lg-2 col-form-lable pl-0">Section</label>
-
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-success active">
-                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
-                                </label>
-                                <label class="btn btn-danger">
-                                  <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
-                                </label>
-                              </div>
-                        </div>
-
-                        <div class="form-group row mt-4">
-                            <label for="" class="col-lg-2 col-form-label">Date and Time</label>
-                            <div class="col-11 col-lg-3 ">
-                                <input class="col-md-12" type="text" name="date" id="date" placeholder="Date">
-                            </div>
-                        
-                            <div class="col-11 col-lg-3 ">
-                                <input class="col-md-12" type="text" name="time" id="time" placeholder="Time">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-form-label offset-lg-2 offset-sm-1 offset-1">
-                                <div >
-                                    <button type="close" class="btn btn-secondary text-white">Cancel</button>
-                                    <button type="submit" class="btn btn-primary text-white">Reserve</button>
-                                </div>
-                                
-                            </div>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-md" role="content">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title text-center offset-3">Welcome back</h2>
-                    <button type="button" class="close" data-dismiss="modal">
-                        &times;
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-row">
-                            <label class="offset-1" for="exampleInputEmail">EMAIL</label>
-                            <input type="email" class="form-control offset-1 col-sm-10" name="exampleInputEmail" id="exampleInputEmail" placeholder="name@email.com">
-                        </div>
-
-                        <div class="form-row">    
-                            <label class="offset-1" for="exampleInputPassword">Enter your password</label>
-                            <input type="password" class="form-control offset-1 col-sm-10" name="exampleInputPassword" id="exampleInputPassword" placeholder="Password">
-                            <a  href="#" id="fgp" class="offset-1 col-sm-10" >Forgot password?</a>
-                            
-                        </div>
-
-                        <div class="form-row">
-                            <button type="submit" class="btn btn-primary offset-1 col-sm-10" >Login</button>
-                        </div>
-
-                        <div class="form-row">
-                            <hr class="col-sm-9 ">
-                        </div>
-
-                        <div class="form-row">
-                            <button class="btn btn-outline-dark offset-1 col-sm-10"><i class="fab fa-google"></i> Continue with Google</button>
-                        </div>
-
-                        <div class="form-row">
-                            <button class="btn btn-outline-dark offset-1 col-sm-10"><i class="fa fa-facebook-square"></i> Continue with Facebook</button>
-                        </div>
-
-                        <div class="form-row">
-                            <button class="btn btn-outline-dark offset-1 col-sm-10"><i class="fab fa-apple"></i> Continue with Apple</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-
-    
-
     <div class="carousel slide" id="bannerCarousel" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -200,239 +69,86 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row row-content">
-            <div class="col">
-                <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img class="d-block img-fluid" 
-                            src="img/uthappizza.png" alt="uthappizza">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                                <p class="d-none d-sm-block">A unique combination of Indian Uthappam 
-                                    (pancake) and Italian pizza, topped with Cerignola olives, ripe vine 
-                                    cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" 
-                            src="img/buffet.png" alt="buffet">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
-                                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, 
-                                    six enticing appetizers, six main entrees and five choicest desserts. 
-                                  Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" 
-                            src="img/alberto.png" alt="alberto">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2>Alberto Somayya</h2>
-                                <h4>Executive Chef</h4>
-                                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience 
-                                    having worked closely with whos-who in the culinary world, he specializes 
-                                    in creating mouthwatering Indo-Italian fusion experiences. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <ol class="carousel-indicators">
-                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#mycarousel" data-slide-to="1" ></li>
-                        <li data-target="#mycarousel" data-slide-to="2" ></li>
-                    </ol>
-                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
-                </div>         
+    <div class="container col-sm-12">
+        <div class="col-sm-8 description-title">
+            <div>
+                <h1 class="titre ">Centre de formation<br>professionnelle privé en Tunisie</h1>
             </div>
+        </div>
+        <div class="description-content">
+            <br><br><br><br><br>
+            <p class="offset-1 col-sm-6">
+                Coursera est un centre de formation professionnelle basé à Tunis, et agréé par l’état tunisien 
+                pour les formations continues avec une variété de programmes, dans différents secteurs d’activité. 
+                Depuis des années, la Tunisie affronte une demande importante de main-d’œuvre dans plusieurs 
+                métiers surtout les métiers spécialisés. En suivant une formation professionnelle, vous 
+                pouvez répondre à cette demande, et finir par avoir un poste stable et bien payé.
+                Grâce à sa démarche pédagogique, TEG peut vous ouvrir des nouveaux horizons, alors n’hésitez 
+                pas à nous contacter pour avoir plus d’informations.
+            </p>
+            <br>
         </div>
     </div>
 
-    <div class="row row-content">
-        <div class="card col-11 col-sm-6 col-md-4 ml-3">
-            <div id="etudecarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img class="d-block img-fluid" 
-                        src="img/isetNabeul/ISET_Nabeul_1.jpg" alt="isetNabeul">
-                        <div class="carousel-caption d-none d-lg-block">
-                            <span class="badge badge-danger">NEW</span>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" 
-                        src="img/isetNabeul/ISET_Nabeul_2.jpg" alt="isetNabeul">
-                        <div class="carousel-caption d-none d-lg-block ">
-                            <span class="badge badge-danger">NEW</span>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" 
-                        src="img/isetNabeul/ISET_Nabeul_logo.png" alt="isetNabeul">
-                        <div class="carousel-caption d-none d-lg-block">
-                            <H3 class="form-check-inline">ISET Nabeul</H3>
-                            <span class="badge badge-danger form-check-inline">NEW</span>
-                        </div>
-                    </div>
-                </div>
-                <ol class="carousel-indicators">
-                    <li data-target="#etudecarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#etudecarousel" data-slide-to="1" ></li>
-                    <li data-target="#etudecarousel" data-slide-to="2" ></li>
-                </ol>
-                <a class="carousel-control-prev" href="#etudecarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#etudecarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>         
-            <div class="card-body">
-                <h5 class="card-title">Iset Nabeul</h5>
-                <p class="card-text"> 
-                    <a data-toggle="collapse" href="#collapseInfoIsetN" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    show more
-                    </a>
-                    <div class="collapse" id="collapseInfoIsetN">
-                        <div class="card card-body">
-                            (ISET-Nabeul) est une institution d'enseignement supérieur tunisienne qui a succédé, en 1995, 
-                            à l'Institut supérieur technique de Nabeul1. L'Iset forme des techniciens supérieurs et 
-                            délivre le diplôme de licence appliquée dans plusieurs domaines.
-                        </div>
-                    </div>
-                </p>
-            </div>
-          </div>
-    </div>
-
-    <div class="row row-content">
-        <div class="col-4">
-            <div id="etudecarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img class="d-block img-fluid" 
-                        src="img/isetNabeul/ISET_Nabeul_1.jpg" alt="isetNabeul">
-                        <div class="carousel-caption d-none d-lg-block ml-auto">
-                            <span class="badge badge-danger">NEW</span>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" 
-                        src="img/isetNabeul/ISET_Nabeul_2.jpg" alt="isetNabeul">
-                        <div class="carousel-caption d-none d-lg-block ml-auto">
-                            <span class="badge badge-danger">NEW</span>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" 
-                        src="img/isetNabeul/ISET_Nabeul_logo.png" alt="isetNabeul">
-                        <div class="carousel-caption d-none d-lg-block ml-auto">
-                            <H3 class="form-check-inline">ISET Nabeul</H3>
-                            <span class="badge badge-danger form-check-inline">NEW</span>
-                        </div>
-                    </div>
-                </div>
-                <ol class="carousel-indicators">
-                    <li data-target="#etudecarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#etudecarousel" data-slide-to="1" ></li>
-                    <li data-target="#etudecarousel" data-slide-to="2" ></li>
-                </ol>
-                <a class="carousel-control-prev" href="#etudecarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#etudecarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>         
-        </div>
-    </div>
-
-    <section class="pt-5 pb-5">
+    <section class="pt-4 pb-4">
         <div class="container">
           <div class="row">
-              <div class="col-6">
-                  <h3 class="mb-3">Our formation</h3>
+              <div class="col-12">
+                    <h3 class="mb-1 text-center titre">Formation à la une</h3>
+                    <h6 class="mb-3 text-center">Des offres complètes de formations adaptées à tous les types d'apprenants</h6>
+                    <div id="img"></div>
+                    <div class="line offset-4"></div>                    
               </div>
              
-              <div class="col-12">
+              <div class="col-12 mt-4">
                   <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                     
                       <div class="carousel-inner">
                           <div class="carousel-item active">
                               <div class="row">
       
+                                    <div class="col-md-4 ">
+                                        <div class="card img-fluid">
+                                            <img class="card-img-top" alt="" src="/img/etude1.jpg">
+                                            <span class="badge badge-danger">PROMO</span>
+                                            <div class="card-img-overlay col-12">
+                                                <div class="">
+                                                    <h4 class="card-title">Pack Formation Multimedia</h4>
+                                                </div>
+                                                <div class="col-12 form-check-inline">
+                                                    <p class="card-text">Prix: 157 DT/mois<br>Durée: 10 mois</p>
+                                                    <a href="#" class="btn btn-info offset-2" role="button">Inscrit d'ici</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card img-fluid">
+                                            <img class="card-img-top" alt="" src="/img/etude2.jpg">
+                                            <div class="card-img-overlay col-12">
+                                                <div class="">
+                                                    <h4 class="card-title">Pack Formation Comptabili..</h4>
+                                                </div>
+                                                <div class="col-12 form-check-inline">
+                                                    <p class="card-text">Prix: 157 DT/mois<br>Durée: 10 mois</p>
+                                                    <a href="#" class="btn btn-info offset-2" role="button">Inscrit d'ici</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                   <div class="col-md-4 mb-3">
-                                      <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
-                                          <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      
-                                          </div>
-      
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4 mb-3">
-                                      <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
-                                          <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4 mb-3">
-                                      <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
-                                          <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      
-                                          </div>
-                                      </div>
-                                  </div>
-      
-                              </div>
-                          </div>
-                          <div class="carousel-item">
-                              <div class="row">
-      
-                                  <div class="col-md-4 mb-3">
-                                      <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
-                                          <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      
-                                          </div>
-      
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4 mb-3">
-                                      <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
-                                          <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4 mb-3">
-                                      <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
-                                          <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      
-                                          </div>
-                                      </div>
+                                    <div class="card img-fluid">
+                                        <img class="card-img-top" alt="" src="/img/etude3.jpg">
+                                        <div class="card-img-overlay col-12">
+                                            <div class="">
+                                                <h4 class="card-title">Formation Agent Bancaire</h4>
+                                            </div>
+                                            <div class="col-12 form-check-inline">
+                                                <p class="card-text">Prix: 157 DT/mois<br>Durée: 10 mois</p>
+                                                <a href="#" class="btn btn-info offset-2" role="button">Inscrit d'ici</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                   </div>
       
                               </div>
@@ -440,36 +156,80 @@
                           <div class="carousel-item">
                               <div class="row">
       
-                                  <div class="col-md-4 mb-3">
-                                      <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
-                                          <div class="card-body">
+                                <div class="col-md-4 ">
+                                    <div class="card img-fluid">
+                                        <img class="card-img-top" alt="" src="/img/etude4.jpg">
+                                        <div class="card-img-overlay col-12">
+                                            <div class="">
+                                                <h4 class="card-title">Formation QHSE (Qualité, ...</h4>
+                                            </div>
+                                            <div class="col-12 form-check-inline">
+                                                <p class="card-text">Prix: 250 DT/mois<br>Durée: 20 mois</p>
+                                                <a href="#" class="btn btn-info offset-2" role="button">Inscrit d'ici</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card img-fluid">
+                                        <img class="card-img-top" alt="" src="/img/etude5.jpg">
+                                        <div class="card-img-overlay col-12">
+                                            <div class="">
+                                                <h4 class="card-title">Pack Formation Topograp...</h4>
+                                            </div>
+                                            <div class="col-12 form-check-inline">
+                                                <p class="card-text">Prix: 450 DT/mois<br>Durée: 28 mois</p>
+                                                <a href="#" class="btn btn-info offset-2" role="button">Inscrit d'ici</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card img-fluid">
+                                        <img class="card-img-top" alt="100%x280" src="img/etude3.jpg">
+                                        <div class="card-img-overlay">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    
+                                        </div>
+                                    </div>
+                                </div>
+      
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row">
+      
+                                <div class="col-md-4 ">
+                                    <div class="card img-fluid">
+                                        <img class="card-img-top" alt="" src="/img/etude1.jpg">
+                                          <div class="card-img-overlay">
                                               <h4 class="card-title">Special title treatment</h4>
                                               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      
                                           </div>
-      
+    
                                       </div>
-                                  </div>
-                                  <div class="col-md-4 mb-3">
-                                      <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
-                                          <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4 mb-3">
-                                      <div class="card">
-                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
-                                          <div class="card-body">
-                                              <h4 class="card-title">Special title treatment</h4>
-                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                          </div>
-                                      </div>
-                                  </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card img-fluid">
+                                        <img class="card-img-top" alt="100%x280" src="/img/etude2.jpg">
+                                        <div class="card-img-overlay">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card img-fluid">
+                                        <img class="card-img-top" alt="100%x280" src="img/etude3.jpg">
+                                        <div class="card-img-overlay">
+                                            <h4 class="card-title">Special title treatment</h4>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    
+                                        </div>
+                                    </div>
+                                </div>
                               </div>
                           </div>
                       </div>
@@ -485,10 +245,227 @@
       </div>
       </section>
 
+      <div class="">
+        <div class="container avantage col-12 pt-3">
+            <div class="row">
+                <div class="offset-5">
+                    <div class="section-title-wrapper white">
+                        <div class="section-title">
+                            <h3 class="titre">Nos avantages</h3>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <i class="fa fa-cog fa-6x" aria-hidden="true"></i>
+                <i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
+                <i class="fa fa-user-graduate fa-5x" aria-hidden="true"></i>
+                <div class="col-md-3">
+                    <div class="avteg">
+                        <i class="fa fa-map-o fa-3x offset-5" aria-hidden="true"></i>
+                        <h4 class="heading m-2 titre text-center">Emplacement stratégique</h4>
+                        <hr class="new col-10">
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                           
+                        <p class="pserv">L'accès à notre centre de formation Tunisie est simple et très rapide, car il est basé au centre ville de Tunis. Vous êtes à deux pas de toutes les stations de transport: bus, train, et métro, et vous êtes proches de toutes les commodités.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="avteg">
+                        <i class="fa fa-child fa-3x offset-5" aria-hidden="true"></i>
+                        <h4 class="heading m-2 titre text-center">Formateurs qualifiés</h4>
+                        <hr class="new col-10">
+                      </div>
+                      <div class="media-body p-2 mt-3">
+                          
+                          <p class="pserv">Dans le but de vous assurer un apprentissage de qualité, nos formateurs vous offrent une formation professionnelle Tunisie divertissante, tout en s’appuyant sur leurs expériences qualificatives&nbsp;et leur maîtrise des outils pédagogiques.</p>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="avteg">
+                        <i class="fa fa-american-sign-language-interpreting fa-3x offset-5" aria-hidden="true"></i>
+                        <h4 class="heading m-2 titre text-center">Diplôme certifié</h4>
+                        <hr class="new col-10">
+                      </div>
+                      <div class="media-body p-2 mt-3">
+                        
+                        <p class="pserv">Grâce à notre système éducatif, nos certifications sont reconnues par le ministère de la formation professionnelle et de l'emploi. Elles permettent à son titulaire d'acquérir des compétences spécifiques ce qui renforce son intégration dans le cadre professionnel.</p>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="avteg">
+                        <i class="fa fa-cogs fa-3x offset-5" aria-hidden="true"></i>
+                        <h4 class="heading m-2 titre text-center">Stage professionnel</h4>
+                        <hr class="new col-10">
+                      </div>
+                      <div class="media-body p-2 mt-3">
+                        
+                        <p class="pserv">Les stages sont l’occasion de développer des compétences pratiques, d’avoir une première expérience du travail ainsi qu’une meilleure connaissance de votre secteur. TEG vous suggère des stages professionnels à durée déterminée.</p>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-12">
+                <h3 class="mb-1 text-center titre">Actualités</h3>
+                <h6 class="mb-3 text-center">Informatios complètes et à jour, compilées par COURSERA</h6>
+                <div id="img"></div>
+                <div class="line offset-4"></div>                    
+          </div>
+            <div class="col-12 col-sm-4 mt-4 mb-4">
+                <div class="card" >
+                    <div class="card-title mb-0">
+                        <img class="rounded-top" style="width: 100%;" src="img/new-bootstrap.png" alt="">
+
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Bootstrap est gratuit et open source fram...</li>
+                    </ul>
+                    <div class="card-header">
+                        <div class="col-sm-6 d-inline">
+                            <i class="fa fa-calendar d-inline"></i>
+                            <p class="act-description d-inline"> 22/06/2022 </p>
+                        </div>
+                        <div class="col-sm-3 d-inline">
+                            <i class="fa fa-eye d-inline"></i>
+                            <p class="act-description d-inline"> 73 </p>
+                        </div>
+                        <div class="col-sm-3 d-inline rounded-bottom">
+                            <i class="fa fa-message d-inline"></i>
+                            <p class="act-description d-inline"> 35 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4 mt-4 mb-4">
+                <div class="card" >
+                    <div class="card-title mb-0">
+                        <img class="rounded-top" style="width: 100%;" src="img/oodoo-new.jpg" alt="">
+
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Odoo couvre tous les besoins de votre en...</li>
+                    </ul>
+                    <div class="card-header">
+                        <div class="col-sm-6 d-inline">
+                            <i class="fa fa-calendar d-inline"></i>
+                            <p class="act-description d-inline"> 12/03/2022 </p>
+                        </div>
+                        <div class="col-sm-3 d-inline">
+                            <i class="fa fa-eye d-inline"></i>
+                            <p class="act-description d-inline"> 24 </p>
+                        </div>
+                        <div class="col-sm-3 d-inline rounded-bottom">
+                            <i class="fa fa-message d-inline"></i>
+                            <p class="act-description d-inline"> 17 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4 mt-4 mb-4">
+                <div class="card" >
+                    <div class="card-title mb-0">
+                        <img class="rounded-top" style="width: 100%;" src="img/react- new.webp" alt="">
+
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">React native est un framework logiciel int...</li>
+                    </ul>
+                    <div class="card-header">
+                        <div class="col-sm-6 d-inline">
+                            <i class="fa fa-calendar d-inline"></i>
+                            <p class="act-description d-inline"> 18/04/2022 </p>
+                        </div>
+                        <div class="col-sm-3 d-inline">
+                            <i class="fa fa-eye d-inline"></i>
+                            <p class="act-description d-inline"> 44 </p>
+                        </div>
+                        <div class="col-sm-3 d-inline rounded-bottom">
+                            <i class="fa fa-message d-inline"></i>
+                            <p class="act-description d-inline"> 17 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="container avantage col-12 pt-3">
+            <div class="row">
+                <div class="offset-5">
+                    <div class="section-title-wrapper white">
+                        <div class="section-title">
+                            <h3 class="titre">Notre résultats en chiffres</h3>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="avteg">
+                        <h4 class="heading m-2 titre text-center">Session formations</h4>
+                        <hr class="new col-4">
+                    </div>
+                    <div class="text-center">
+                        <p id="nbr" class="mb-4 d-inline">350</p><p id="nbr" class="mb-4 d-inline">+</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="avteg">
+                        <h4 class="heading m-2 titre text-center">Candidats formés</h4>
+                        <hr class="new col-4">
+                    </div>
+                    <div class="text-center">
+                        <p id="nbr1" class="mb-4 d-inline">4572</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="avteg">
+                        <h4 class="heading m-2 titre text-center">Formateurs</h4>
+                        <hr class="new col-4">
+                    </div>
+                    <div class="text-center">
+                        <p id="nbr2" class="mb-4 d-inline">78</p><p id="nbr" class="mb-4 d-inline">+</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="avteg">
+                        <h4 class="heading m-2 titre text-center">Évenements</h4>
+                        <hr class="new col-4">
+                    </div>
+                    <div class="text-center">
+                        <p id="nbr3" class="mb-4 d-inline">40</p><p id="nbr" class="mb-4 d-inline">+</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="container">
             <div class="row">             
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-4">
                     <div class="footer-logo text-center" style="float:left;width:43%;padding-right: 30px;">                                       
                         <img class="filtered" src="img/brand/coursera-wordmark-blue.svg" width="100">
                      </div>
@@ -510,7 +487,7 @@
                         <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-xl"></i></a>
                         <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope fa-xl"></i></a>
                 </div>
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-sm-2">
                     <h3 class="footer-title titre">Navigation</h3>
                     <a href="https://www.formation.com">Qui sommes nous?</a><br>
                     <a href="https://www.formation.com">Formation</a><br>
@@ -521,11 +498,11 @@
                 </div>
                 <div class="col-12 col-sm-3">
                     <h3 class="footer-title titre" >Notre adresse</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3209.858413656255!2d10.674844814628985!3d36.436806195771545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13029f1ca3014f93%3A0x197afabacb39f85c!2sHigher%20Institute%20of%20Technological%20Studies%20of%20Nabeul!5e0!3m2!1sen!2stn!4v1647275113406!5m2!1sen!2stn" width="270" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3209.858413656255!2d10.674844814628985!3d36.436806195771545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13029f1ca3014f93%3A0x197afabacb39f85c!2sHigher%20Institute%20of%20Technological%20Studies%20of%20Nabeul!5e0!3m2!1sen!2stn!4v1647275113406!5m2!1sen!2stn" width="270" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
            </div>
            <div class="row">             
-                <div class="col-auto">
+                <div class="col-auto" style="height: 20px;">
                     <p>© Copyright 2022 Institut Superieure de Technologie Nabeul</p>
                 </div>
            </div>
@@ -536,6 +513,7 @@
    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
    <script src="https://kit.fontawesome.com/3b0c032b4f.js" crossorigin="anonymous"></script>
+   <script src="js/main.js"></script>
 </body>
 
 </html>

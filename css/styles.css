@@ -11,7 +11,7 @@
 }
 
 .footer {
-    background-color: #3260a8;
+    background-color: #2e3f53;
     color: white;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
@@ -61,7 +61,7 @@ body{
     background-color: white;
 }
 .navbar-light .navbar-nav .active>.nav-link{
-    color: #1c00d1;
+    color: #2e3f53;
     font-family: 'Mukta', sans-serif;
     font-weight: 700;
     margin-right: 7px;
@@ -100,8 +100,8 @@ body{
     font-weight: 700;
 }
 .btn-primary{
-    background-color: rgb(0, 86, 210);
-    border-color: rgb(0, 86, 210);
+    background-color: #2e3f53;
+    border-color: #2e3f53;
 }
 #fgp{
     font-size: 70%;
@@ -179,3 +179,159 @@ hr {
   img.filtered {
     filter:  brightness(0) invert(1);
     }
+.description-content{
+    background-color: #2e3f53;
+    color: white;
+    background-image: url(https://tegcenter.com/img/banner/1.jpg);
+    background-size: contain;
+    background-position: 20px;
+    background-repeat: no-repeat
+}
+.description-title{ 
+    color: white;  
+    width: 100%;
+    height: 100%;
+    transform: skew(20deg);
+    background-color: #00aced;
+}
+.description-title h1{
+    margin-bottom: -80px;
+}
+.line{
+    width: 350px;
+    height: 0px;
+    border-bottom: 2px solid #2e3f53;
+    position: absolute;
+}
+#img {
+    background: rgba(0,0,0,0) url(/img/edu.jpg) no-repeat scroll 0 0;
+    bottom: -8px;
+    color: #1bb4b9;
+    content: "";
+    font-size: 14px;
+    height: 20px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 40px;
+    z-index: 9;
+  }
+#carouselExampleIndicators2 .card-title{
+    color: black;
+}
+#carouselExampleIndicators2 .card-img-overlay{
+    color: #FFFFFF;
+    color: #191970;
+    font-size: 15px;
+    position: absolute;
+    font-weight: bold;
+    top: 175px;
+    width: 100%;
+    height: fit-content;
+    background: rgba(134, 188, 66, 0.6) none repeat scroll 0 0;
+    background: rgba(255,255,255, 0.5) none repeat scroll 0 0;
+}
+#carouselExampleIndicators2 .carousel-control-prev{
+    left: -70px;
+}
+#carouselExampleIndicators2 .carousel-control-next{
+    right: -70px;
+}
+.card span{
+    position: absolute;
+    background: red none repeat scroll 0 0;
+    font-size: 20px;
+    left: 75%;
+    top: 7px;
+    animation-name: badgeAnimation;
+    animation-duration: 2s;
+}
+@keyframes badgeAnimation {
+    from {background-color: red none repeat scroll 0 0;}
+    to {background-color: yellow none repeat scroll 0 0;}
+}
+hr.new {
+    border-top: 2px solid white;
+  }
+.container-fluid{
+    background-color: #2e3f53;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+.avantage{
+    background-color: #2e3f53;
+    color: white;
+}
+.fa-cog{
+    position: absolute;
+    left: 55%;
+    top: 217%;
+    color: white;
+    opacity: 0.2;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+@keyframes rotation {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.fa-graduation-cap{
+    position: absolute;
+    opacity: 0.2;
+    left:70%; 
+    top:200%;
+}
+.fa-user-graduate{
+    position: absolute;
+    opacity: 0.2;
+    left: 24%;
+    top: 215%;
+}
+@keyframes user {
+    0%   {left:22%; top:240%;}
+    12.5%{left:30%; top:230%;}
+    25%  {left:40%; top:220%;}
+    37.5%{left:50%; top:210%;}
+    50%  {left:60%; top:210%;}
+    62.5%{left:65%; top:205%;}
+    75%  {left:70%; top:200%;}
+    87.5%{left:75%; top:190%;}
+    100% {left:85%; top:182%;}
+  }
+.change-logo-color{
+    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}
+#nbr{
+    font-size:62px;
+    font-family: 'Montserrat', sans-serif;
+  }
+#nbr1{
+    font-size:62px;
+    font-family: 'Montserrat', sans-serif;
+}
+#nbr2{
+    font-size:62px;
+    font-family: 'Montserrat', sans-serif;
+}
+#nbr3{
+    font-size:62px;
+    font-family: 'Montserrat', sans-serif;
+}
