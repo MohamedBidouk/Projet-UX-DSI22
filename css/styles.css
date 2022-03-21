@@ -319,19 +319,19 @@ hr.new {
 .change-logo-color{
     filter: sepia(0.5) contrast(0.9) ;
 }
-#nbr{
+#count{
     font-size:62px;
     font-family: 'Montserrat', sans-serif;
   }
-#nbr1{
+#count1{
     font-size:62px;
     font-family: 'Montserrat', sans-serif;
 }
-#nbr2{
+#count2{
     font-size:62px;
     font-family: 'Montserrat', sans-serif;
 }
-#nbr3{
+#count3{
     font-size:62px;
     font-family: 'Montserrat', sans-serif;
 }
