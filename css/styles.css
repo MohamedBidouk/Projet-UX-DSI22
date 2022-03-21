@@ -335,3 +335,110 @@ hr.new {
     font-size:62px;
     font-family: 'Montserrat', sans-serif;
 }
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  cn {
+    animation: counter 5s ease-in-out forwards;
+    counter-reset: num var(--num);
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem;
+  }
+  cn::after {
+    content: counter(num);
+    font-size: xxx-large;
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 378;
+    }
+}
+
+
+ 
+
+  @property --num1 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  cn1 {
+    animation: counter1 8s ease-in-out forwards;
+    counter-reset: num1 var(--num1);
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem;
+  }
+  cn1::after {
+    content: counter(num1);
+    font-size: xxx-large;
+  }
+  
+  @keyframes counter1 {
+    from {
+      --num1: 0;
+    }
+    to {
+      --num1: 5200;
+    }
+}
+
+@property --num2 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  cn2 {
+    animation: counter2 5s ease-in-out forwards;
+    counter-reset: num2 var(--num2);
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem;
+  }
+  cn2::after {
+    content: counter(num2);
+    font-size: xxx-large;
+  }
+  
+  @keyframes counter2 {
+    from {
+      --num2: 0;
+    }
+    to {
+      --num2: 76;
+    }
+}
+
+@property --num3 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  cn3 {
+    animation: counter3 5s ease-in-out forwards;
+    counter-reset: num3 var(--num3);
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem;
+  }
+  cn3::after {
+    content: counter(num3);
+    font-size: xxx-large;
+  }
+  
+  @keyframes counter3 {
+    from {
+      --num3: 0;
+    }
+    to {
+      --num3: 12;
+    }
+}
+
