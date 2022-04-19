@@ -342,7 +342,8 @@ hr.new {
   }
   
   cn {
-    animation: counter 5s ease-in-out forwards;
+    animation: counter 8s ease-in-out forwards;
+    animation-delay: 4s;
     counter-reset: num var(--num);
     font-family: 'Montserrat', sans-serif;
     padding: 2rem;
@@ -371,7 +372,8 @@ hr.new {
   }
   
   cn1 {
-    animation: counter1 8s ease-in-out forwards;
+    animation: counter1 12s ease-in-out forwards;
+    animation-delay: 4s;
     counter-reset: num1 var(--num1);
     font-family: 'Montserrat', sans-serif;
     padding: 2rem;
@@ -386,7 +388,7 @@ hr.new {
       --num1: 0;
     }
     to {
-      --num1: 5200;
+      --num1: 5199;
     }
 }
 
@@ -397,7 +399,8 @@ hr.new {
   }
   
   cn2 {
-    animation: counter2 5s ease-in-out forwards;
+    animation: counter2 6s ease-in-out forwards;
+    animation-delay: 4s;
     counter-reset: num2 var(--num2);
     font-family: 'Montserrat', sans-serif;
     padding: 2rem;
@@ -424,6 +427,7 @@ hr.new {
   
   cn3 {
     animation: counter3 5s ease-in-out forwards;
+    animation-delay: 4s;
     counter-reset: num3 var(--num3);
     font-family: 'Montserrat', sans-serif;
     padding: 2rem;
