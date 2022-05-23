@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@500&family=Mukta:wght@300&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <title>Coursera | Administrator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/Dashboard/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/Dashboard/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modify course</h4>
+                    <button class="close" type="button" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="numberofguests" class="col-lg-2 col-form-label">Number of Guests</label>
+                            <div class="col-11 col-lg-3 ">
+                                <input class="col-md-12" type="text" name="date" id="date" placeholder="Number of participants">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="numberofguests" class="col-lg-2 col-form-label">Instructer name</label>
+                            <div class="col-11 col-lg-3 ">
+                                <input class="col-md-12" type="text" name="date" id="date" placeholder="Sonia">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="numberofguests" class="col-lg-2 col-form-label">Program name</label>
+                            <div class="col-11 col-lg-3 ">
+                                <input class="col-md-12" type="text" name="date" id="date" placeholder="UX and UI training ...">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="numberofguests" class="col-lg-2 col-form-label">Section</label>
+                            <div class="col-11 col-lg-3 ">
+                                <input class="col-md-12" type="text" name="date" id="date" placeholder="ex:Mechanic">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-4">
+                            <label for="" class="col-lg-2 col-form-label">Date and Time</label>
+                            <div class="col-11 col-lg-3 ">
+                                <input class="col-md-12" type="text" name="date" id="date" placeholder="Date">
+                            </div>
+                        
+                            <div class="col-11 col-lg-3 ">
+                                <input class="col-md-12" type="text" name="time" id="time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-form-label offset-lg-2 offset-sm-1 offset-1">
+                                <div >
+                                    <button type="close" class="btn btn-secondary text-white">Cancel</button>
+                                    <button type="submit" class="btn btn-primary text-white">Modify</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Coursera</a>
+      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link " href="Dashboard Template for Bootstrap.html">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  Orders
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="shopping-cart"></span>
+                  Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="users"></span>
+                  Customers
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Reports
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Integrations
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Saved reports</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Current month
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Last quarter
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Social engagement
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Year-end sale
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4" style="background-color:white; color: black;">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+            <h1 class="h2">Dashboard</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <div class="btn-group mr-2">
+                <button class="btn btn-sm btn-outline-secondary">Share</button>
+                <button class="btn btn-sm btn-outline-secondary">Export</button>
+              </div>
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                <span data-feather="calendar"></span>
+                This week
+              </button>
+            </div>
+          </div>
+
+         
+          <script type="text/javascript">
+
+            function handleClick(evt) {
+              var node = evt.target || evt.srcElement;
+              if (node.name == 'edit') {
+                node.value = "Modify";
+              }
+            }
+            </script>            
+
+          <h2>Training list</h2>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm" id="table1" onclick="handleClick(event);">
+              <thead>
+                <tr>
+                  <th>Numéro</th>
+                  <th>Training</th>
+                  <th>Instructor name</th>
+                  <th>Seen</th>
+                  <th>Registred</th>
+                  <th>see detail</th>
+                  <th>Modify</th>
+                  <th>Delete</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>React training program</td>
+                  <td>Sara</td>
+                  <td>126</td>
+                  <td>78</td>
+                  <td>
+                    <form name="f1" action="#" >
+                     <input id="edit1" type="submit" name="see detail" value="see detail" >
+                    </form>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="edit" value="Modify"
+                         data-toggle="modal" data-target="#reserveModal" role="button">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                             <input id="edit1" type="submit" name="Delete" value="Delete" onclick="myFunction()">
+                            </form>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>Java training program</td>
+                  <td>Sinda</td>
+                  <td>154</td>
+                  <td>119</td>
+                  <td>
+                    <form name="f1" action="#" >
+                     <input id="edit1" type="submit" name="see detail" value="see detail">
+                    </form>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="edit" value="Modify"data-toggle="modal" data-target="#reserveModal" role="button">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                                <input id="edit1" type="submit" name="Delete" value="Delete" onclick="myFunction()">
+                            </form>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Symfony training program</td>
+                  <td>Mohamed</td>
+                  <td>379</td>
+                  <td>285</td>
+                  <td>
+                    <form name="f1" action="#" >
+                     <input id="edit1" type="submit" name="see detail" value="see detail">
+                    </form>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="edit" value="Modify"data-toggle="modal" data-target="#reserveModal" role="button">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                                <input id="edit1" type="submit" name="Delete" value="Delete" onclick="myFunction()">
+                            </form>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>Symfony training program</td>
+                  <td>Mohamed</td>
+                  <td>379</td>
+                  <td>285</td>
+                  <td>
+                    <form name="f1" action="#" >
+                     <input id="edit1" type="submit" name="see detail" value="see detail">
+                    </form>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="edit" value="Modify"data-toggle="modal" data-target="#reserveModal" role="button">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                             <input id="edit1" type="submit" name="Delete" value="Delete">
+                            </form>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>React training program</td>
+                  <td>Sara</td>
+                  <td>126</td>
+                  <td>78</td>
+                  <td>
+                    <form name="f1" action="#" >
+                     <input id="edit1" type="submit" name="see detail" value="see detail">
+                    </form>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="edit" value="Modify"data-toggle="modal" data-target="#reserveModal" role="button">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                             <input id="edit1" type="submit" name="Delete" value="Delete">
+                            </form>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>Java training program</td>
+                  <td>Sinda</td>
+                  <td>154</td>
+                  <td>119</td>
+                  <td>
+                    <form name="f1" action="#" >
+                     <input id="edit1" type="submit" name="see detail" value="see detail">
+                    </form>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="edit" value="Modify"data-toggle="modal" data-target="#reserveModal" role="button">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                             <input id="edit1" type="submit" name="Delete" value="Delete">
+                            </form>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>Symfony training program</td>
+                  <td>Mohamed</td>
+                  <td>379</td>
+                  <td>285</td>
+                  <td>
+                    <form name="f1" action="#" >
+                     <input id="edit1" type="submit" name="see detail" value="see detail">
+                    </form>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="edit" value="Modify"data-toggle="modal" data-target="#reserveModal" role="button">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                             <input id="edit1" type="submit" name="Delete" value="Delete">
+                            </form>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>Symfony training program</td>
+                  <td>Mohamed</td>
+                  <td>379</td>
+                  <td>285</td>
+                  <td>
+                    <form name="f1" action="#" >
+                     <input id="edit1" type="submit" name="see detail" value="see detail">
+                    </form>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="edit" value="Modify"data-toggle="modal" data-target="#reserveModal" role="button">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                             <input id="edit1" type="submit" name="Delete" value="Delete">
+                            </form>
+                </tr>
+                <tr>
+                    <td>1,007</td>
+                    <td>Symfony training program</td>
+                    <td>Mohamed</td>
+                    <td>379</td>
+                    <td>285</td>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="see detail" value="see detail">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                             <input id="edit1" type="submit" name="edit" value="Modify"data-toggle="modal" data-target="#reserveModal" role="button">
+                            </form>
+                            <td>
+                                <form name="f1" action="#" >
+                                 <input id="edit1" type="submit" name="Delete" value="Delete">
+                                </form>
+                  </tr>
+                  <tr>
+                    <td>1,008</td>
+                    <td>Symfony training program</td>
+                    <td>Mohamed</td>
+                    <td>379</td>
+                    <td>285</td>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="see detail" value="see detail">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                             <input id="edit1" type="submit" name="edit" value="Modify"data-toggle="modal" data-target="#reserveModal" role="button">
+                            </form>
+                            <td>
+                                <form name="f1" action="#" >
+                                 <input id="edit1" type="submit" name="Delete" value="Delete">
+                                </form>
+                  </tr> <tr>
+                    <td>1,007</td>
+                    <td>Symfony training program</td>
+                    <td>Mohamed</td>
+                    <td>379</td>
+                    <td>285</td>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="see detail" value="see detail">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                             <input id="edit1" type="submit" name="edit" value="Modify"data-toggle="modal" data-target="#reserveModal" role="button">
+                            </form>
+                            <td>
+                                <form name="f1" action="#" >
+                                 <input id="edit1" type="submit" name="Delete" value="Delete">
+                                </form>
+                  </tr>
+                  <tr>
+                    <td>1,008</td>
+                    <td>Symfony training program</td>
+                    <td>Mohamed</td>
+                    <td>379</td>
+                    <td>285</td>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="see detail" value="see detail">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                             <input id="edit1" type="submit" name="edit" value="Modify"data-toggle="modal" data-target="#reserveModal" role="button">
+                            </form>
+                            <td>
+                                <form name="f1" action="#" >
+                                 <input id="edit1" type="submit" name="Delete" value="Delete">
+                                </form>
+                  </tr> 
+                  <tr>
+                    <td>1,007</td>
+                    <td>Symfony training program</td>
+                    <td>Mohamed</td>
+                    <td>379</td>
+                    <td>285</td>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="see detail" value="see detail">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                             <input id="edit1" type="submit" name="edit" value="Modify">
+                            </form>
+                            <td>
+                                <form name="f1" action="#" >
+                                 <input id="edit1" type="submit" name="Delete" value="Edit">
+                                </form>
+                  </tr>
+                  <tr>
+                    <td>1,008</td>
+                    <td>Symfony training program</td>
+                    <td>Mohamed</td>
+                    <td>379</td>
+                    <td>285</td>
+                    <td>
+                        <form name="f1" action="#" >
+                         <input id="edit1" type="submit" name="see detail" value="see detail">
+                        </form>
+                        <td>
+                            <form name="f1" action="#" >
+                             <input id="edit1" type="submit" name="edit" value="Modify">
+                            </form>
+                            <td>
+                                <form name="f1" action="#" >
+                                 <input id="edit1" type="submit" name="Delete" value="Edit">
+                                </form>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script>
+        function myFunction() {
+          let text = "Are you sure to delete!\nEither OK or Cancel.";
+          if (confirm(text) == true) {
+            text = "Delete confirmed!";
+          } else {
+            text = "You canceled!";
+          }
+          document.getElementById("edit1").innerHTML = text;
+        }
+        </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+    <!-- Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.1/dist/Chart.min.js"></script>
+    <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          datasets: [{
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: 'transparent',
+            borderColor: '#007bff',
+            borderWidth: 4,
+            pointBackgroundColor: '#007bff'
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+          },
+          legend: {
+            display: false,
+          }
+        }
+      });
+    </script>
+       <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="https://kit.fontawesome.com/3b0c032b4f.js" crossorigin="anonymous"></script>
+   <script src="js/main.js"></script>
+  </body>
+</html>

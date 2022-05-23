@@ -17,35 +17,51 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand mr-auto" href="./index.html"><img src="img/logo.png" height="30" width="41"></a>
-            <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item "><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img class="change-logo-color" src="img/brand/coursera-wordmark-blue.svg" height="30" width="100"></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <div class="dropdown mr-2">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
             </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="What do you want to learn ?" aria-label="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-large"></i></a></li>
+                <li class="nav-item active"><a class="nav-link" href="aboutus.html">A propos</a></li>
+                <li class="nav-item active"><a class="nav-link" href="aboutus.html">Formation</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Etudes</a></li>
+                <li class="nav-item active"><a class="nav-link" href="./contactus.html">Actualités</a></li>
+            </ul>
         </div>
-    </header>
+</nav>
+
+<div class="row">
+    <div class="offset-1 col-12 col-sm-7">
+        <h3 class="titre" style="color: #2e3f53;">Formation professionnelle Tunisie destinée aux salariés, et aux entreprises</h3>
+        <p style="color: #2e3f53;" class="mb-5">Beaucoup d’entreprises investissent dans la formation des salariés pour garantir leur montée en compétences, d’où l’interêt des formations professionnelles.
+
+            Notre centre de formation Tunisie, propose ce genre de formation continue pour les entreprises et les salariés afin de pouvoir donner aux membres de votre équipe les moyens de développer leur potentiel et transcender les obstacles de l’orientation conventionnelle.
+            
+            COURSERA vous donne la possibilité de suivre des formations professionnelles Tunisie au sein de votre société c’est à dire formations intra-entreprise, ou bien dans des locaux loués par notre organisme ; soit des formations inter-entreprise.
+            
+            Alors, en adoptant une nouvelle culture d’entreprise, vous augmentez vos chances non seulement pour perfectionner les performances de votre organisation mais aussi pour renforcer votre marge économique.</p>
+    </div>
+    <div class="col-12 col-sm-3">
+        <img class="img-flid d-block mt-5" src="img/ft2.jpg" alt="" style="width:100%;">
+    </div>
+</div>
 
     <div class="container">
         <div class="row">
@@ -82,20 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="card card-body bg-light">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">You better cut the pizzain four pieces
-                            because I'm not hungry enough to eat six!
-                        </p>
-                        <footer class="blockquote-footer">
-                            Yogi Berra, 
-                            <cite title="Source Title">The wit and wisdom of 
-                                Yogi Berra, P. Pepe, Diversion books, 2014 </cite>
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
+            
         </div>
 
 
@@ -232,48 +235,55 @@
     <footer class="footer">
         <div class="container">
             <div class="row">             
-                <div class="col-4 offset-1 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                <div class="col-12 col-sm-4">
+                    <div class="footer-logo text-center" style="float:left;width:43%;padding-right: 30px;">                                       
+                        <img class="filtered" src="img/brand/coursera-wordmark-blue.svg" width="100">
+                     </div>
+                    <p style="float:none; padding:4px; ">COURSERA vous propose une offre complète de formations adaptées à tout public : particuliers
+                        , étudiants, employés, demandeurs d'emploi et chefs d'entreprises. Un centre de 
+                        formation professionnelle implanté en plein centre ville, ayant une infrastructure 
+                        adaptée aux exigences des normes de la formation demandée.
+                    </p>
                 </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-		              <i class="fa fa-phone fa-lg"></i>: +852 8765 4321<br>
-		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
+                <div class="col-12 col-sm-3">
+                    <h3 class="footer-title titre" >Contactez nous</h3>
+                        <i class="fa fa-phone fa-md "></i> : <a href="tel:+21652682256">+216 52 682 256</a><br>
+		                <i class="fa fa-envelope fa-md"></i> : <a href="mailto:confusion@food.net">confusion@food.net</a><br>
+                        <i class="fa fa-globe fa-md"></i> : <a href="https://www.formation.com">www.formation.com</a><br>
+                        <i class="fa fa-map-marker fa-md"></i> : 920, Rue de liberty Nabeul<br>
+                        <a class="btn btn-social-icon btn-tiktok" href="http://tiktok.com/"><i class="fab fa-tiktok fa-xl"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-xl"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-xl"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-xl"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope fa-xl"></i></a>
                 </div>
-                <div class="col-12 col-sm-4 align-self-center d-none d-sm-block">
-                    <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
-                    </div>
+                <div class="col-12 col-sm-2">
+                    <h3 class="footer-title titre">Navigation</h3>
+                    <a href="https://www.formation.com">Qui sommes nous?</a><br>
+                    <a href="https://www.formation.com">Formation</a><br>
+                    <a href="https://www.formation.com">Actualités</a><br>
+                    <a href="https://www.formation.com">Certeficat</a><br>
+                    <a href="https://www.formation.com">Etude</a><br>
+                    <a href="https://www.formation.com">Contact</a><br>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <h3 class="footer-title titre" >Notre adresse</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3209.858413656255!2d10.674844814628985!3d36.436806195771545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13029f1ca3014f93%3A0x197afabacb39f85c!2sHigher%20Institute%20of%20Technological%20Studies%20of%20Nabeul!5e0!3m2!1sen!2stn!4v1647275113406!5m2!1sen!2stn" width="270" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
            </div>
-           <div class="row justify-content-center">             
-                <div class="col-auto">
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+           <div class="row">             
+                <div class="col-auto" style="height: 20px;">
+                    <p>© Copyright 2022 Institut Superieure de Technologie Nabeul</p>
                 </div>
            </div>
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3b0c032b4f.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
